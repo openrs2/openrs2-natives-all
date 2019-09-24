@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>dev.openrs2</groupId>
+    <artifactId>openrs2-parent</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>openrs2-natives-all</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <name>OpenRS2 All Natives</name>
+  <description>
+    Single jar file containing pre-built copies of OpenRS2's native library
+    replacements for all platforms.
+  </description>
+
+  <scm>
+    <connection>scm:git:https://git.openrs2.dev/openrs2/openrs2-natives-all.git</connection>
+    <developerConnection>scm:git:git@git.openrs2.dev:openrs2/openrs2-natives-all.git</developerConnection>
+    <url>https://git.openrs2.dev/openrs2/openrs2-natives-all</url>
+  </scm>
+  <issueManagement>
+    <system>Gitea</system>
+    <url>https://git.openrs2.dev/openrs2/openrs2-natives-all/issues</url>
+  </issueManagement>
+  <ciManagement>
+    <system>Jenkins</system>
+    <url>https://build.openrs2.dev/job/openrs2-natives-all/</url>
+  </ciManagement>
+
+  <properties>
+    <openrs2.natives.directory>${project.build.directory}/dependency/lib</openrs2.natives.directory>
+    <openrs2.natives.version>1.0.0-SNAPSHOT</openrs2.natives.version>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>dev.openrs2</groupId>
+      <artifactId>openrs2-gl-natives</artifactId>
+      <version>${openrs2.natives.version}</version>
+      <type>nar</type>
+      <classifier>amd64-Linux-gcc-shared</classifier>
+    </dependency>
+    <dependency>
+      <groupId>dev.openrs2</groupId>
+      <artifactId>openrs2-gl-dri-natives</artifactId>
+      <version>${openrs2.natives.version}</version>
+      <type>nar</type>
+      <classifier>amd64-Linux-gcc-shared</classifier>
+    </dependency>
+  </dependencies>
+
+  <repositories>
+    <repository>
+      <id>openrs2</id>
+      <name>OpenRS2</name>
+      <url>https://repo.openrs2.dev/repository/openrs2/</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
+    <repository>
+      <id>openrs2-snapshots</id>
+      <name>OpenRS2 Snapshots</name>
+      <url>https://repo.openrs2.dev/repository/openrs2-snapshots/</url>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
+  </repositories>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>make-assembly</id>
+            <phase>package</phase>
+            <goals>
+              <goal>single</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <descriptors>
+            <descriptor>${project.basedir}/src/assembly/jar.xml</descriptor>
+          </descriptors>
+          <appendAssemblyId>false</appendAssemblyId>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-dependency-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>unpack-dependencies</id>
+            <phase>initialize</phase>
+            <goals>
+              <goal>unpack-dependencies</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+</project>

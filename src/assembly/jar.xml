@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assembly xmlns="http://maven.apache.org/ASSEMBLY/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/ASSEMBLY/2.0.0 http://maven.apache.org/xsd/assembly-2.0.0.xsd">
+  <id>jar</id>
+  <formats>
+    <format>jar</format>
+  </formats>
+  <includeBaseDirectory>false</includeBaseDirectory>
+  <files>
+    <file>
+      <source>${openrs2.natives.directory}/amd64-Linux-gcc/shared/libopenrs2-gl-natives-${openrs2.natives.version}.so</source>
+      <outputDirectory>natives/linux-amd64</outputDirectory>
+      <destName>libjaggl.so</destName>
+    </file>
+    <file>
+      <source>${openrs2.natives.directory}/amd64-Linux-gcc/shared/libopenrs2-gl-dri-natives-${openrs2.natives.version}.so</source>
+      <outputDirectory>natives/linux-amd64</outputDirectory>
+      <destName>libjaggl_dri.so</destName>
+    </file>
+  </files>
+</assembly>
