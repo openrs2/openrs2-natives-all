@@ -16,5 +16,15 @@
       <outputDirectory>natives/linux-amd64</outputDirectory>
       <destName>libjaggl_dri.so</destName>
     </file>
+    <!-- workaround for https://issues.apache.org/jira/browse/MASSEMBLY-835 -->
+    <file>
+      <source>pom.xml</source>
+      <outputDirectory>META-INF/maven/${project.groupId}/${project.artifactId}</outputDirectory>
+    </file>
+    <file>
+      <source>pom.properties</source>
+      <outputDirectory>META-INF/maven/${project.groupId}/${project.artifactId}</outputDirectory>
+      <filtered>true</filtered>
+    </file>
   </files>
 </assembly>
