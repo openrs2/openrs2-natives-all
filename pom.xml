@@ -76,6 +76,38 @@
       <classifier>x86_64-MacOSX-gcc-shared</classifier>
       <scope>provided</scope>
     </dependency>
+    <dependency>
+      <groupId>dev.openrs2</groupId>
+      <artifactId>openrs2-gl-natives</artifactId>
+      <version>${openrs2.natives.version}</version>
+      <type>nar</type>
+      <classifier>x86-Windows-msvc-shared</classifier>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>dev.openrs2</groupId>
+      <artifactId>openrs2-misc-natives</artifactId>
+      <version>${openrs2.natives.version}</version>
+      <type>nar</type>
+      <classifier>x86-Windows-msvc-shared</classifier>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>dev.openrs2</groupId>
+      <artifactId>openrs2-gl-natives</artifactId>
+      <version>${openrs2.natives.version}</version>
+      <type>nar</type>
+      <classifier>amd64-Windows-msvc-shared</classifier>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>dev.openrs2</groupId>
+      <artifactId>openrs2-misc-natives</artifactId>
+      <version>${openrs2.natives.version}</version>
+      <type>nar</type>
+      <classifier>amd64-Windows-msvc-shared</classifier>
+      <scope>provided</scope>
+    </dependency>
   </dependencies>
 
   <repositories>

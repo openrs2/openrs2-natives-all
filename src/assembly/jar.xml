@@ -26,6 +26,26 @@
       <outputDirectory>natives/mac-amd64</outputDirectory>
       <destName>libjaggl.jnilib</destName>
     </file>
+    <file>
+      <source>${openrs2.natives.directory}/x86-Windows-msvc/shared/openrs2-gl-natives-${openrs2.natives.version}.dll</source>
+      <outputDirectory>natives/windows-i386</outputDirectory>
+      <destName>jaggl.dll</destName>
+    </file>
+    <file>
+      <source>${openrs2.natives.directory}/x86-Windows-msvc/shared/openrs2-misc-natives-${openrs2.natives.version}.dll</source>
+      <outputDirectory>natives/windows-i386</outputDirectory>
+      <destName>jagmisc.dll</destName>
+    </file>
+    <file>
+      <source>${openrs2.natives.directory}/amd64-Windows-msvc/shared/openrs2-gl-natives-${openrs2.natives.version}.dll</source>
+      <outputDirectory>natives/windows-amd64</outputDirectory>
+      <destName>jaggl.dll</destName>
+    </file>
+    <file>
+      <source>${openrs2.natives.directory}/amd64-Windows-msvc/shared/openrs2-misc-natives-${openrs2.natives.version}.dll</source>
+      <outputDirectory>natives/windows-amd64</outputDirectory>
+      <destName>jagmisc.dll</destName>
+    </file>
     <!-- workaround for https://issues.apache.org/jira/browse/MASSEMBLY-835 -->
     <file>
       <source>pom.xml</source>
