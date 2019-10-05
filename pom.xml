@@ -49,6 +49,22 @@
       <artifactId>openrs2-gl-natives</artifactId>
       <version>${openrs2.natives.version}</version>
       <type>nar</type>
+      <classifier>i386-Linux-gcc-shared</classifier>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>dev.openrs2</groupId>
+      <artifactId>openrs2-gl-dri-natives</artifactId>
+      <version>${openrs2.natives.version}</version>
+      <type>nar</type>
+      <classifier>i386-Linux-gcc-shared</classifier>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>dev.openrs2</groupId>
+      <artifactId>openrs2-gl-natives</artifactId>
+      <version>${openrs2.natives.version}</version>
+      <type>nar</type>
       <classifier>amd64-Linux-gcc-shared</classifier>
       <scope>provided</scope>
     </dependency>
