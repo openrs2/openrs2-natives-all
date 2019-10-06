@@ -29,12 +29,12 @@
     <file>
       <source>${openrs2.natives.directory}/i386-MacOSX-gcc/shared/libopenrs2-gl-natives-${openrs2.natives.version}.dylib</source>
       <outputDirectory>natives/mac-i386</outputDirectory>
-      <destName>libjaggl.jnilib</destName>
+      <destName>libjaggl.dylib</destName>
     </file>
     <file>
       <source>${openrs2.natives.directory}/x86_64-MacOSX-gcc/shared/libopenrs2-gl-natives-${openrs2.natives.version}.dylib</source>
       <outputDirectory>natives/mac-amd64</outputDirectory>
-      <destName>libjaggl.jnilib</destName>
+      <destName>libjaggl.dylib</destName>
     </file>
     <file>
       <source>${openrs2.natives.directory}/x86-Windows-msvc/shared/openrs2-gl-natives-${openrs2.natives.version}.dll</source>
