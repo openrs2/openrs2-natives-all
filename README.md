@@ -1,5 +1,7 @@
 # OpenRS2 All Natives
 
+[![Build status badge](https://build.openrs2.dev/buildStatus/icon?job=openrs2-natives-all&build=lastCompleted)](https://build.openrs2.dev/job/openrs2-natives-all/)
+
 ## Copyright
 
 Copyright (c) 2019 OpenRS2 Authors
