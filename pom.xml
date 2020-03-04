@@ -17,12 +17,6 @@
     Single jar file containing pre-built copies of OpenRS2's native library
     replacements for all platforms.
   </description>
-  <licenses>
-    <license>
-      <name>GNU Lesser General Public License v3.0 or later</name>
-      <url>https://www.gnu.org/licenses/lgpl-3.0.txt</url>
-    </license>
-  </licenses>
 
   <scm>
     <connection>scm:git:https://git.openrs2.dev/openrs2/openrs2-natives-all.git</connection>
