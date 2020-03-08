@@ -1,6 +1,6 @@
 # OpenRS2 All Natives
 
-[![Build status badge](https://build.openrs2.dev/buildStatus/icon?job=openrs2-natives-all&build=lastCompleted)](https://build.openrs2.dev/job/openrs2-natives-all/)
+[![Build status badge](https://build.openrs2.dev/api/badges/openrs2/openrs2-natives-all/status.svg)](https://build.openrs2.dev/openrs2/openrs2-natives-all/)
 
 ## License
 
