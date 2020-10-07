@@ -8,52 +8,52 @@
   <files>
     <file>
       <source>${openrs2.natives.directory}/i386-Linux-gcc/shared/libopenrs2-gl-natives-${openrs2.natives.version}.so</source>
-      <outputDirectory>dev/openrs2/natives/linux-i386</outputDirectory>
+      <outputDirectory>org/openrs2/natives/linux-i386</outputDirectory>
       <destName>libjaggl.so</destName>
     </file>
     <file>
       <source>${openrs2.natives.directory}/i386-Linux-gcc/shared/libopenrs2-gl-dri-natives-${openrs2.natives.version}.so</source>
-      <outputDirectory>dev/openrs2/natives/linux-i386</outputDirectory>
+      <outputDirectory>org/openrs2/natives/linux-i386</outputDirectory>
       <destName>libjaggl_dri.so</destName>
     </file>
     <file>
       <source>${openrs2.natives.directory}/amd64-Linux-gcc/shared/libopenrs2-gl-natives-${openrs2.natives.version}.so</source>
-      <outputDirectory>dev/openrs2/natives/linux-amd64</outputDirectory>
+      <outputDirectory>org/openrs2/natives/linux-amd64</outputDirectory>
       <destName>libjaggl.so</destName>
     </file>
     <file>
       <source>${openrs2.natives.directory}/amd64-Linux-gcc/shared/libopenrs2-gl-dri-natives-${openrs2.natives.version}.so</source>
-      <outputDirectory>dev/openrs2/natives/linux-amd64</outputDirectory>
+      <outputDirectory>org/openrs2/natives/linux-amd64</outputDirectory>
       <destName>libjaggl_dri.so</destName>
     </file>
     <file>
       <source>${openrs2.natives.directory}/i386-MacOSX-gcc/shared/libopenrs2-gl-natives-${openrs2.natives.version}.dylib</source>
-      <outputDirectory>dev/openrs2/natives/mac-i386</outputDirectory>
+      <outputDirectory>org/openrs2/natives/mac-i386</outputDirectory>
       <destName>libjaggl.dylib</destName>
     </file>
     <file>
       <source>${openrs2.natives.directory}/x86_64-MacOSX-gcc/shared/libopenrs2-gl-natives-${openrs2.natives.version}.dylib</source>
-      <outputDirectory>dev/openrs2/natives/mac-amd64</outputDirectory>
+      <outputDirectory>org/openrs2/natives/mac-amd64</outputDirectory>
       <destName>libjaggl.dylib</destName>
     </file>
     <file>
       <source>${openrs2.natives.directory}/x86-Windows-msvc/shared/openrs2-gl-natives-${openrs2.natives.version}.dll</source>
-      <outputDirectory>dev/openrs2/natives/windows-i386</outputDirectory>
+      <outputDirectory>org/openrs2/natives/windows-i386</outputDirectory>
       <destName>jaggl.dll</destName>
     </file>
     <file>
       <source>${openrs2.natives.directory}/x86-Windows-msvc/shared/openrs2-misc-natives-${openrs2.natives.version}.dll</source>
-      <outputDirectory>dev/openrs2/natives/windows-i386</outputDirectory>
+      <outputDirectory>org/openrs2/natives/windows-i386</outputDirectory>
       <destName>jagmisc.dll</destName>
     </file>
     <file>
       <source>${openrs2.natives.directory}/amd64-Windows-msvc/shared/openrs2-gl-natives-${openrs2.natives.version}.dll</source>
-      <outputDirectory>dev/openrs2/natives/windows-amd64</outputDirectory>
+      <outputDirectory>org/openrs2/natives/windows-amd64</outputDirectory>
       <destName>jaggl.dll</destName>
     </file>
     <file>
       <source>${openrs2.natives.directory}/amd64-Windows-msvc/shared/openrs2-misc-natives-${openrs2.natives.version}.dll</source>
-      <outputDirectory>dev/openrs2/natives/windows-amd64</outputDirectory>
+      <outputDirectory>org/openrs2/natives/windows-amd64</outputDirectory>
       <destName>jagmisc.dll</destName>
     </file>
     <!-- workaround for https://issues.apache.org/jira/browse/MASSEMBLY-835 -->
