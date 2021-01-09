@@ -35,12 +35,12 @@
 
   <properties>
     <openrs2.natives.directory>${project.build.directory}/dependency/lib</openrs2.natives.directory>
-    <openrs2.natives.version>1.0.0</openrs2.natives.version>
+    <openrs2.natives.version>1.1.0</openrs2.natives.version>
   </properties>
 
   <dependencies>
     <dependency>
-      <groupId>dev.openrs2</groupId>
+      <groupId>org.openrs2</groupId>
       <artifactId>openrs2-gl-natives</artifactId>
       <version>${openrs2.natives.version}</version>
       <type>nar</type>
@@ -48,7 +48,7 @@
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>dev.openrs2</groupId>
+      <groupId>org.openrs2</groupId>
       <artifactId>openrs2-gl-dri-natives</artifactId>
       <version>${openrs2.natives.version}</version>
       <type>nar</type>
@@ -56,7 +56,7 @@
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>dev.openrs2</groupId>
+      <groupId>org.openrs2</groupId>
       <artifactId>openrs2-gl-natives</artifactId>
       <version>${openrs2.natives.version}</version>
       <type>nar</type>
@@ -64,7 +64,7 @@
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>dev.openrs2</groupId>
+      <groupId>org.openrs2</groupId>
       <artifactId>openrs2-gl-dri-natives</artifactId>
       <version>${openrs2.natives.version}</version>
       <type>nar</type>
@@ -72,7 +72,7 @@
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>dev.openrs2</groupId>
+      <groupId>org.openrs2</groupId>
       <artifactId>openrs2-gl-natives</artifactId>
       <version>${openrs2.natives.version}</version>
       <type>nar</type>
@@ -80,7 +80,7 @@
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>dev.openrs2</groupId>
+      <groupId>org.openrs2</groupId>
       <artifactId>openrs2-gl-natives</artifactId>
       <version>${openrs2.natives.version}</version>
       <type>nar</type>
@@ -88,7 +88,7 @@
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>dev.openrs2</groupId>
+      <groupId>org.openrs2</groupId>
       <artifactId>openrs2-gl-natives</artifactId>
       <version>${openrs2.natives.version}</version>
       <type>nar</type>
@@ -96,7 +96,7 @@
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>dev.openrs2</groupId>
+      <groupId>org.openrs2</groupId>
       <artifactId>openrs2-misc-natives</artifactId>
       <version>${openrs2.natives.version}</version>
       <type>nar</type>
@@ -104,7 +104,7 @@
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>dev.openrs2</groupId>
+      <groupId>org.openrs2</groupId>
       <artifactId>openrs2-gl-natives</artifactId>
       <version>${openrs2.natives.version}</version>
       <type>nar</type>
@@ -112,7 +112,7 @@
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>dev.openrs2</groupId>
+      <groupId>org.openrs2</groupId>
       <artifactId>openrs2-misc-natives</artifactId>
       <version>${openrs2.natives.version}</version>
       <type>nar</type>
