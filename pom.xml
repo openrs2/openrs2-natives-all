@@ -92,6 +92,14 @@
       <artifactId>openrs2-gl-natives</artifactId>
       <version>${openrs2.natives.version}</version>
       <type>nar</type>
+      <classifier>aarch64-MacOSX-gcc-shared</classifier>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.openrs2</groupId>
+      <artifactId>openrs2-gl-natives</artifactId>
+      <version>${openrs2.natives.version}</version>
+      <type>nar</type>
       <classifier>x86-Windows-msvc-shared</classifier>
       <scope>provided</scope>
     </dependency>

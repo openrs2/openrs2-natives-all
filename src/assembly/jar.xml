@@ -37,6 +37,11 @@
       <destName>libjaggl.dylib</destName>
     </file>
     <file>
+      <source>${openrs2.natives.directory}/aarch64-MacOSX-gcc/shared/libopenrs2-gl-natives-${openrs2.natives.version}.dylib</source>
+      <outputDirectory>org/openrs2/natives/mac-aarch64</outputDirectory>
+      <destName>libjaggl.dylib</destName>
+    </file>
+    <file>
       <source>${openrs2.natives.directory}/x86-Windows-msvc/shared/openrs2-gl-natives-${openrs2.natives.version}.dll</source>
       <outputDirectory>org/openrs2/natives/windows-i386</outputDirectory>
       <destName>jaggl.dll</destName>
